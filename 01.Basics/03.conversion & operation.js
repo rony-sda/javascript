@@ -77,7 +77,7 @@ console.log(y);     // 6
 let i = 5;
 let result = i++ + ++i;
 // result = 5 + 7 = 12
- console.log(result);   // 12
+console.log(result);   // 12
 console.log(i);        // 7
 
 
