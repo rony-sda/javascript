@@ -11,12 +11,9 @@ let accountState; // undefined
 accountEmail = "rony@anything.com"
 accountPassword = "21212121"
 
-console.log(accountId);
-
 /*
 Prefer not to use var
 because of issue in block scope and functional scope
 */
-
 
 console.table([accountId, accountEmail, accountPassword, anything, accountState])
