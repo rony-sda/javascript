@@ -1,4 +1,5 @@
 
+// *********************** Number ***********************
 const score = 400
 console.log(score);
 
@@ -14,7 +15,7 @@ const hundreds = 1000000
 console.log(hundreds.toLocaleString('bn-BD')); // ১০,০০,০০০
 
 
-// +++++++++++++ Maths +++++++++++++++++++++++++++++
+// *********************** Maths ***********************
 
 console.log(Math);
 console.log(Math.abs(-4));

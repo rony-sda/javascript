@@ -1,11 +1,12 @@
 
-// Stack (Premitive), Heap (Non-Premitive)
-// Stack => Copy
+// ************* Stack (Premitive), Heap (Non-Premitive) **************
+
+// --------------- Stack => Copy ------------------
 let myName = 'Rony'
 let myShortName = myName
 myShortName = 'Rony Gazi'
 
-// Heap => Refferace
+// --------------- Heap => Refferace ------------------
 const myRole = {
     name: 'Rony',
     work: 'Software Developer'
@@ -14,6 +15,8 @@ const myRole = {
 const myUpdateRole = myRole
 myUpdateRole.work = 'Full Stack Developer'
 
+
+// --------------- Notes ------------------
 /*
 Primitive Types:
 1. Stored in stack.

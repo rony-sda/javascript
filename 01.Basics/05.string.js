@@ -1,13 +1,15 @@
 
+// *********************** String ***********************
 const name = "Rony"
 const age = 20
 
-// string concatenation
+// --------------- string concatenation ------------------
 console.log(name + age + " Value");
 
-// string interpolation
+// --------------- string interpolation ------------------
 console.log(`Hello my name is ${name} and my repo count is ${age}`);
 
+// --------------- string Methods ------------------
 const teamName = new String('bangladesh')
 console.log(teamName) // [String: 'bangladesh']
 console.log(teamName[0]); // b
@@ -17,7 +19,6 @@ const str1 = "Hello";
 const str2 = "World";
 const url = "https://rony.com/rony%20gazi"
 
-// String Methods
 console.log(teamName.length); // 10 
 console.log(teamName.toUpperCase()); // BANGLADESH
 console.log(teamName.toLowerCase()); // bangladesh

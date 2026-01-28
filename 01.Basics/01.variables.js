@@ -1,5 +1,7 @@
 
-// assigning variables in JavaScript
+// *********************** variable ***********************
+
+// ---------- assigning variables in JavaScript -------------
 const accountId = 4389
 // accountId = 2 => Reassign not allowed
 let accountEmail = "rony@example.com"
@@ -7,7 +9,12 @@ var accountPassword = "securepassword3239"
 anything = '42390' // not recommended
 let accountState; // undefined
 
-// reassigning variables
+// avoid this assignments
+let num1, num2, num3
+num1 = num2 = num3 = 2 + 2
+
+
+// --------------- reassigning variables --------------------
 accountEmail = "rony@anything.com"
 accountPassword = "21212121"
 

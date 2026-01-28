@@ -1,7 +1,7 @@
 
 // *********************** Conversion ***********************
 
-// Number
+// --------------- Number ------------------
 const score = '32'
 let valueInNumber = Number(score)
 console.log(typeof valueInNumber); // number
@@ -13,7 +13,7 @@ console.log(valueInNumber);
 //  true => 1; false => 0
 
 
-// Boolean
+// --------------- Boolean ------------------
 let isLoggedIn = "Rony"
 let booleanIsLoggedIn = Boolean(isLoggedIn)
  console.log(booleanIsLoggedIn); // true
@@ -24,7 +24,7 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 // "Rony" => true
 
 
-// String
+// --------------- String ------------------
 let someNumber = 33
 let stringNumber = String(someNumber)
 console.log(stringNumber);
@@ -58,11 +58,7 @@ console.log(+true); // 1
 console.log(+""); // 0
 
 
-// avoid this assignments
-let num1, num2, num3
-num1 = num2 = num3 = 2 + 2
-
-// prefix vs postfix
+// --------------- prefix vs postfix ------------------
 
 // postfix
 let x = 5;

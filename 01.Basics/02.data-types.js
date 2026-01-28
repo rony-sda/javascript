@@ -1,7 +1,15 @@
 
-//  Primitive
+// *********************** primitive *********************** 
 
-//  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
+/*  7 types : 
+// number => 2 to power 53
+// bigint
+// string => ""
+// boolean => true/false
+// null => standalone value
+// undefined => 
+// symbol => unique
+*/
 
 const myName = 'Rony'
 const score = 100
@@ -15,17 +23,9 @@ console.log(id === anotherId); // false
 console.log(typeof anotherId); // symbol
 const bigNumber = 3456543576654356754n
 
-// number => 2 to power 53
-// bigint
-// string => ""
-// boolean => true/false
-// null => standalone value
-// undefined => 
-// symbol => unique
 
 
-
-// Reference (Non primitive)
+// ********************* Reference (Non primitive) *********************
 
 // Array, Objects, Functions
 
@@ -39,11 +39,7 @@ const myFunction = function(){
     console.log("Hello world");
 }
 
-
-
-// https://262.ecma-international.org/5.1/#sec-11.4.3
-
-
+// --------------- Notes ------------------
 /*
 Return type of variables in JavaScript
 1) Primitive Datatypes
@@ -59,4 +55,6 @@ Return type of variables in JavaScript
        Arrays  =>  object
        Function  =>  function
        Object  =>  object
+
+    https://262.ecma-international.org/5.1/#sec-11.4.3
 */
