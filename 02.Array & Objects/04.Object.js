@@ -1,33 +1,7 @@
-// consructor => singleton
-// Object.create();
+// singleton
 const singleton = new Object();
 
-// litaral
-const mySym = Symbol("mySym");
-const myTeam = {
-  name: "Bangladesh",
-  "members count": 11,
-  isQualified: true,
-  [mySym]: "mySym1",
-};
-
-// access braket Notation (right way)
-console.log(myTeam["name"]);
-console.log(myTeam["members count"]);
-console.log(myTeam[mySym]);
-console.log(myTeam);
-
-// access dot notation
-console.log(myTeam.name);
-console.log(myTeam.isQualified);
-
-myTeam.isPlay = function () {
-  console.log(`Yes We Are Playing..... ${this.name}`);
-};
-
-console.log(myTeam.isPlay());
-
-//  nested objects
+// --------------- nested objects (litaral) ------------------
 const regularUser = {
   email: "any@gmail.com",
   fullname: {
@@ -37,9 +11,9 @@ const regularUser = {
     },
   },
 };
-// console.log(regularUser.fullname.userfullname.firstname);
+console.log(regularUser.fullname.userfullname.firstname);
 
-// merge object
+// --------------- merge object ------------------
 const obj1 = { 1: "a", 2: "b" };
 const obj2 = { 3: "c", 4: "d" };
 const obj3 = { 5: "e", 6: "f" };
@@ -52,7 +26,7 @@ const obj6 = { ...obj1, ...obj2 };
 console.log(obj3);
 // {1: "a", 2: "b", 3: "c", 4: "d", 5: "e", 6: "f"}
 
-// Array Of Objects
+// --------------- Array Of Objects ------------------
 const users = [
   {
     id: 1,
@@ -70,7 +44,13 @@ const users = [
 
 users[1].email; // access
 
-//  objects loops
+// --------------- objects loops ------------------
+const myTeam = {
+  name: "Bangladesh",
+  "members count": 11,
+  isQualified: true,
+  isPlay: () => console.log("any"),
+};
 console.log(Object.keys(myTeam));
 // [ 'name', 'members count', 'isQualified', 'isPlay' ]
 console.log(Object.values(myTeam));
@@ -85,16 +65,24 @@ console.log(Object.entries(myTeam));
 
 console.log(myTeam.hasOwnProperty("isLoggedIn")); // false
 
-// destructuring
+// --------------- destructuring ------------------
 const course = {
   coursename: "ai ml",
   price: "999",
   courseInstructor: "rony",
+  students: {
+    names: ["rony", "tony", "bany"],
+    address: "new bd, road-12",
+  },
 };
 
 // course.courseInstructor
 
 const { courseInstructor: instructor } = course;
+const {
+  students: { address: instructorAddress },
+} = course;
 
 // console.log(courseInstructor);
 console.log(instructor);
+console.log(instructorAddress);

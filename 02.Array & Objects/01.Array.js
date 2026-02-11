@@ -2,23 +2,9 @@
 
 const myArr = [0, 1, 2, 3, 4, 5];
 const myArr2 = new Array(1, 2, 3, 4);
-const teams = ["bangladesh", "pakistan"];
-const asiaTeams = ["ban", "pak", "sri"];
-const withOutAsiaTeams = ["aus", "eng", "nz"];
-let score1 = 100;
-let score2 = 200;
-let score3 = 300;
 
-console.log(myArr[1]); // access value
-asiaTeams.push(withOutAsiaTeams);
-console.log(asiaTeams);
-// ["aus", "eng", "nz" , ["ban", "pak", "sri"]]
-console.log(asiaTeams[3][1]); // pak
-
-// spread operator
-const all_teams = [...asiaTeams, ...withOutAsiaTeams];
-console.log(all_teams);
-// ["aus", "eng", "nz","ban", "pak", "sri"]
+// access value
+console.log(myArr[1]);
 
 // --------------- Array Methods ------------------
 
@@ -150,9 +136,3 @@ console.log(splicedCopy); // [3,2]
 const withCopy = nums.with(1, 99);
 console.log(nums); // [3,1,2]
 console.log(withCopy); // [3,99,2]
-
-// Others Array Methods
-console.log(Array.isArray("Rony")); // false
-console.log(Array.from("Rony")); // [ 'R', 'o', 'n', 'y' ]
-console.log(Array.from({ name: "Rony" })); // []
-console.log(Array.of(score1, score2, score3)); // [ 100, 200, 300 ]
